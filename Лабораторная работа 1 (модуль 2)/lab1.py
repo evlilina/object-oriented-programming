@@ -122,7 +122,7 @@ class Social_media_account:
         :return: Сколько лайков собрали посты в аккаунте
 
         Примеры:
-        >>> social_media_account = social_media_account(1000, 500)
+        >>> social_media_account = Social_media_account(1000, 500)
         >>> social_media_account.likes(250)
         """
         ...
