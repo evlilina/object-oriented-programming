@@ -2,7 +2,7 @@
 import doctest
 
 
-class capybara:
+class Capybara:
     def __init__(self, age: float, weight: float):
         """
         Создание и подготовка к работе объекта "Капибара"
@@ -11,7 +11,7 @@ class capybara:
         :param weight: вес капибары
 
         Примеры:
-        >>> capybara = capybara(5, 40)  # инициализация экземпляра класса
+        >>> capybara = Capybara(5, 40)  # инициализация экземпляра класса
         """
         if not isinstance(age, (int, float)):
             raise TypeError("Возраст капибары должен быть типа int или float")
@@ -33,7 +33,7 @@ class capybara:
         :return: количество купленных мандаринов
 
         Примеры:
-        >>> capybara = capybara(5, 40)
+        >>> capybara = Capybara(5, 40)
         >>> capybara.buy_tangerines_for_capybara(15)
         """
         ...
@@ -48,7 +48,7 @@ class capybara:
         то возвращается ошибка.
 
         Примеры:
-        >>> capybara = capybara(5, 40)
+        >>> capybara = Capybara(5, 40)
         >>> capybara.feed_capybara_tangerines(7)
         """
         ...
@@ -60,7 +60,7 @@ class capybara:
         :raise ValueError: Если количество детенышей превышает 8, то вызываем ошибку
 
         Примеры:
-        >>> capybara = capybara(5, 40)
+        >>> capybara = Capybara(5, 40)
         >>> capybara.capybara_babies(3)
         """
         if not isinstance(babies, int):
@@ -76,7 +76,7 @@ if __name__ == "__main__":
     doctest.testmod()  # тестирование примеров, которые находятся в документации
 
 
-class social_media_account:
+class Social_media_account:
     def __init__(self, followers: int, following: int):
         """
         Создание и подготовка к работе объекта "Аккаунт в социальной сети"
@@ -85,7 +85,7 @@ class social_media_account:
         :param following: подписки
 
         Примеры:
-        >>> social_media_account = social_media_account(1000, 500)  # инициализация экземпляра класса
+        >>> social_media_account = Social_media_account(1000, 500)  # инициализация экземпляра класса
         """
         if not isinstance(followers, (int)):
             raise TypeError("Количество подписчиков должно быть типа int")
@@ -108,7 +108,7 @@ class social_media_account:
 
 
         Примеры:
-        >>> social_media_account = social_media_account(1000, 500)
+        >>> social_media_account = Social_media_account(1000, 500)
         >>> social_media_account.unfollow(38)
         """
         if unfollows > 1000:
@@ -133,7 +133,7 @@ if __name__ == "__main__":
     doctest.testmod()  # тестирование примеров, которые находятся в документации
 
 
-class book_shop:
+class Book_shop:
     def __init__(self, books: int, clients_a_day: int):
         """
         Создание и подготовка к работе объекта "Книжный магазин"
@@ -142,7 +142,7 @@ class book_shop:
         :param clients_a_day: количество посетителей магазина за день
 
         Примеры:
-        >>> book_shop = book_shop(5000, 300)  # инициализация экземпляра класса
+        >>> book_shop = Book_shop(5000, 300)  # инициализация экземпляра класса
         """
         if not isinstance(books, (int)):
             raise TypeError("Количество книг должно быть типа int")
@@ -165,7 +165,7 @@ class book_shop:
 
 
         Примеры:
-        >>> book_shop = book_shop(5000, 300)
+        >>> book_shop = Book_shop(5000, 300)
         >>> book_shop.sold_books(17)
         """
         if sold_books_in_a_day > 5000:
@@ -179,7 +179,7 @@ class book_shop:
         :return: на сколько книг пополнился ассортимент
 
         Примеры:
-        >>> book_shop = book_shop(5000, 300)
+        >>> book_shop = Book_shop(5000, 300)
         >>> book_shop.book_purchase(383)
         """
         ...
